@@ -293,6 +293,7 @@ export default function Infinity_Corner() {
                         src={panel_background}
                         fill
                         priority
+                        unoptimized
                     />
 
                     <div style={{
@@ -307,6 +308,7 @@ export default function Infinity_Corner() {
                             src={star_normal}
                             fill
                             priority
+                            unoptimized
                         />
                         {Object.keys(ic_mapping).map((inner_val) => {
 
