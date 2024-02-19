@@ -9,9 +9,11 @@ function MouseOverPopover({
   extraClasses,
   opacity,
   forceOpen,
+  forceClose,
   setForceOpen,
   disableRestoreFocusParam,
-  forceXPlacement
+  forceXPlacement,
+  forceYPlacement,
 }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const [forceShow, setForceShow] = useState(false);
@@ -26,7 +28,10 @@ function MouseOverPopover({
     }
   };
   opacity = opacity ? opacity : "0.9";
-  const open = !!setForceOpen ? forceOpen : Boolean(anchorEl);
+  let open = !!setForceOpen ? forceOpen : Boolean(anchorEl);
+  if(forceClose){
+    open = false;
+  }
   let currCords = 0;
 
   const [screenX, setScreenX] = useState(100);
@@ -50,8 +55,17 @@ function MouseOverPopover({
     }
   }
 
-  if(forceXPlacement){
+  if (forceXPlacement) {
     xPlacement = forceXPlacement;
+  }
+  if (forceYPlacement) {
+    yPlacement = forceYPlacement;
+    if (yPlacement === 'top') {
+      yTransform = 'bottom';
+    }
+    if (yPlacement === 'bottom') {
+      yTransform = 'top';
+    }
   }
 
   return (
@@ -74,7 +88,7 @@ function MouseOverPopover({
         id="mouse-over-popover"
         sx={{
           pointerEvents: "none",
-          width:'100%'
+          width: '100%'
         }}
         open={open}
         anchorEl={anchorEl}
