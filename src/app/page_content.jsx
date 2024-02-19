@@ -139,7 +139,7 @@ export default function Home() {
   const [mobileMode, setMobileMode] = useState(false);
   useEffect(() => {
     setMobileMode(isMobile);
-  }, [isMobile]);
+  }, []);
 
   return (
     <div
@@ -194,7 +194,7 @@ export default function Home() {
                   enter: 
                 </div>
                 <div style={{fontWeight: 'bold', color:"darkred", margin:"0 6px"}}>
-                "copysave"
+                {`"copysave"`}
                 </div>
                 <div>
                 in the reward code box (found in settings, gift box icon)
