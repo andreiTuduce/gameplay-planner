@@ -73,6 +73,17 @@
       "static/css/6e4ba7c08522b020.css",
       "static/chunks/app/expeditions/page-b7b14dc66ca769ab.js"
     ],
+    "/infinity_corner/page": [
+      "static/chunks/webpack-1a3d0bb7214c21d1.js",
+      "static/chunks/fd9d1056-b9dda61b927b93cb.js",
+      "static/chunks/472-0f6515bcbb2ee0a9.js",
+      "static/chunks/main-app-26285fbcd7fee8bd.js",
+      "static/chunks/413-8cee6ae60237d063.js",
+      "static/chunks/201-fc3be4f40976bc3c.js",
+      "static/chunks/385-cab35535096392dd.js",
+      "static/chunks/528-52921cfccb9e0d3e.js",
+      "static/chunks/app/infinity_corner/page-434f94eb4451f155.js"
+    ],
     "/farming/page": [
       "static/chunks/webpack-1a3d0bb7214c21d1.js",
       "static/chunks/fd9d1056-b9dda61b927b93cb.js",
@@ -98,17 +109,6 @@
       "static/chunks/280-346ef481134ad556.js",
       "static/chunks/326-e5b4ae3b24dba096.js",
       "static/chunks/app/gratitude/page-24afc74c68eae992.js"
-    ],
-    "/infinity_corner/page": [
-      "static/chunks/webpack-1a3d0bb7214c21d1.js",
-      "static/chunks/fd9d1056-b9dda61b927b93cb.js",
-      "static/chunks/472-0f6515bcbb2ee0a9.js",
-      "static/chunks/main-app-26285fbcd7fee8bd.js",
-      "static/chunks/413-8cee6ae60237d063.js",
-      "static/chunks/201-fc3be4f40976bc3c.js",
-      "static/chunks/385-cab35535096392dd.js",
-      "static/chunks/528-52921cfccb9e0d3e.js",
-      "static/chunks/app/infinity_corner/page-6f5dc31ad7822c79.js"
     ],
     "/pets/page": [
       "static/chunks/webpack-1a3d0bb7214c21d1.js",
