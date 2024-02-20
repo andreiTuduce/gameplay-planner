@@ -17,7 +17,6 @@ import MouseOverPopover from "../util/Tooltip.jsx";
 import panel_background from '../../../public/images/infinity_corner/panel_background.png';
 import star_normal from '../../../public/images/infinity_corner/LastEraTopBackground.png';
 
-
 export default function Infinity_Corner() {
 
     const [clientData, setData] = useLocalStorage('userData', DefaultSave);
