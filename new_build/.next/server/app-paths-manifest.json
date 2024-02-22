@@ -4,11 +4,11 @@
   "/page": "app/page.js",
   "/page_selection/page": "app/page_selection/page.js",
   "/cards/page": "app/cards/page.js",
-  "/expeditions/page": "app/expeditions/page.js",
-  "/infinity_corner/page": "app/infinity_corner/page.js",
   "/farming/page": "app/farming/page.js",
+  "/expeditions/page": "app/expeditions/page.js",
   "/gratitude/page": "app/gratitude/page.js",
-  "/pets/page": "app/pets/page.js",
+  "/infinity_corner/page": "app/infinity_corner/page.js",
+  "/residue/page": "app/residue/page.js",
   "/protein/page": "app/protein/page.js",
-  "/residue/page": "app/residue/page.js"
+  "/pets/page": "app/pets/page.js"
 }
