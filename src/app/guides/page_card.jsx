@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const PageCard = ({ page, setTab, redBorder }) => {
+const PageCard = ({ page, setTab, redBorder, url_force }) => {
   let imgString = "";
   let nameString = "";
   let url = "";
@@ -60,48 +60,49 @@ const PageCard = ({ page, setTab, redBorder }) => {
       nameString = 'Residue';
       url = '/residue';
       break;
-      case 'infinity_corner':
-        imgString = 'star';
-        nameString = "Infinity Corner";
-        url = '/infinity_corner';
-        break;
-      case 'guides':
-        imgString = 'paper_scroll';
-        nameString = "Guides";
-        url = '/guides';
-        break;
+    case 'infinity_corner':
+      imgString = 'star';
+      nameString = "Infinity Corner";
+      url = '/infinity_corner';
+      break;
     default:
       imgString = `file_upload`;
       nameString = `Upload`;
       break;
   }
   const disabled = false;
+
+  if (url_force) {
+    url = url_force;
+  }
+
   return (
     <Link href={url} style={{ textDecoration: 'none' }}>
       <div
         className={`hover`}
         style={{
-          height: "148px",
+          height: "calc(148px - 4px)",
           width: "150px",
-          marginRight: "48px",
           borderRadius: "6px",
           pointerEvents: disabled ? "none" : "",
           opacity: disabled ? "0.3" : "",
+          // backgroundColor:'red'
         }}
       >
         <div className={`${redBorder ? 'borderToFadeInAndOutRed' : ''}`}
           style={{
-            height: "80%",
+            height: "calc(80% - 12px)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: "rgba(255,255,255, 0.05)",
+            // backgroundColor: "blue",
             borderTopRightRadius: "12px",
             borderTopLeftRadius: "12px",
             padding: "6px 6px 6px 6px",
             borderTop: "2px solid rgba(255,255,255,0.8)",
             borderLeft: "2px solid rgba(255,255,255,0.8)",
-            borderRight: "2px solid rgba(255,255,255,0.8)",
+            borderRight: "2px solid rgba(255,255,255,0.8)"
           }}
         >
           <div
@@ -123,11 +124,11 @@ const PageCard = ({ page, setTab, redBorder }) => {
 
         <div className={`${redBorder ? 'borderToFadeInAndOutRed' : ''}`}
           style={{
-            height: "20%",
+            height: "calc(20% - 4px)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "rgba(255,255,255, 0.12)",
+            // backgroundColor: "rgba(255,255,255, 0.12)",
             borderBottomRightRadius: "12px",
             borderBottomLeftRadius: "12px",
             borderBottom: "2px solid rgba(255,255,255,0.8)",

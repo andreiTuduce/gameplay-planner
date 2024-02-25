@@ -29,15 +29,7 @@ export default function PageSelection() {
             }, 500);
         }
     }, []);
-    useEffect(() => {
-
-
-        // setTimeout(() => {
-        //     ReactGA.send({ hitType: "pageview", page: "/page_selection_", title: "_Page Selection" });
-        // }, 500);
-
-    }, []);
-
+    
     const [clientData, setData] = useLocalStorage('userData', DefaultSave);
     const [data, setRunTimeData] = useState(DefaultSave);
 
@@ -86,6 +78,7 @@ export default function PageSelection() {
                 <div
                     style={{ display: 'flex', marginTop: '36px' }}
                 >
+                    <PageCard page='guides' />
                     <PageCard page='gratitude' />
                 </div>
 
